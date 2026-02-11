@@ -71,3 +71,41 @@ Referral Code
 
 Code snippets
 <img width="800" height="500" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/a55bf82d-3f3d-4567-b418-4b854788a830" />
+
+## Code2Xplore – 60 Days Challenge (Day‑3)
+  Goal
+    The goal is to create a program that checks student marks and classifies them into grades, while also counting valid and failed students.
+    Inputs
+The program takes:
+  - Number of students (m)
+  - Marks of each student
+  - A fixed username ("amar")
+
+Logic
+  - If the username length is ≥ 6, each student’s mark is increased by 2.
+  - If the username length is < 6, each student’s mark is decreased by 2.
+Since "amar" has only 4 characters, all marks are reduced by 2.
+  
+Validation Rules (Grading)
+
+  - 91–100 → Excellent
+  - 76–89 → Very Good
+  - 61–74 → Good
+  - 41–59 → Average
+  - 0–39 → Fail
+  - Marks outside 0–100 → Invalid
+
+Counters
+  - valid → counts all students whose marks fall into valid ranges (0–100).
+  - fail → counts students who fall into the Fail category.
+
+Output
+  - Prints each student’s adjusted mark with its grade.
+  - Prints total valid students.
+  - Prints total failed students.
+<img width="1437" height="958" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/9afcad43-0ed4-4ffd-a090-491501e320a4" />
+
+
+
+
+
