@@ -103,7 +103,57 @@ Output
   - Prints each student’s adjusted mark with its grade.
   - Prints total valid students.
   - Prints total failed students.
-<img width="1437" height="958" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/9afcad43-0ed4-4ffd-a090-491501e320a4" />
+
+
+## Code2Xplore – 60 Days Challenge (Day‑4)<img width="1306" height="907" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f17beb52-31e0-4f5f-aa67-ddd772bfdae6" />
+
+
+# Activity Score Risk Categorization Program
+
+## Goal
+
+* The goal is to create a program that checks a student’s activity scores and classifies them into risk categories, while also counting valid, ignored, and filtered scores.
+
+## Inputs
+
+The program takes:
+
+* Number of activity scores (`m`)
+* Activity scores (one score at a time)
+* A registration number (used for personalized filtering)
+
+## Logic
+
+* For each score:
+
+  * If the score is negative, it is ignored.
+  * Scores are classified as follows:
+
+    * 0–30 → Low Risk
+    * 31–60 → Medium Risk
+    * 61–100 → High Risk
+    * > 100 → Critical Risk
+* Personalized filtering based on the last digit (`D`) of the registration number:
+
+  * If `D` is **even**, all Low Risk scores are removed.
+  * If `D` is **odd**, all Critical Risk scores are removed.
+
+## Counters
+
+* `valid` → counts all scores in the valid range (≥0)
+* `ignored` → counts all negative scores
+* `removed` → counts the scores removed due to the personalized filtering
+
+## Output
+
+* Prints the last digit of the registration number (`D`)
+* Shows risk categories **before and after filtering**
+* Prints total valid scores, total ignored scores, and total removed scores
+  <img width="1437" height="958" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/9afcad43-0ed4-4ffd-a090-491501e320a4" />
+  
+
+
+
 
 
 
