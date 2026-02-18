@@ -104,9 +104,9 @@ Output
   - Prints total valid students.
   - Prints total failed students.
 
+<img width="1306" height="907" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f17beb52-31e0-4f5f-aa67-ddd772bfdae6" />
 
-## Code2Xplore – 60 Days Challenge (Day‑4)<img width="1306" height="907" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f17beb52-31e0-4f5f-aa67-ddd772bfdae6" />
-
+## Code2Xplore – 60 Days Challenge (Day‑4)
 
 # Activity Score Risk Categorization Program
 
@@ -150,12 +150,61 @@ The program takes:
 * Shows risk categories **before and after filtering**
 * Prints total valid scores, total ignored scores, and total removed scores
   <img width="1437" height="958" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/9afcad43-0ed4-4ffd-a090-491501e320a4" />
-  
 
+## Code2Xplore – 60 Days Challenge (Day-5)
 
+# Demand Classification and Personalized Filtering Program
 
+## Goal
 
+- Create a program to analyze demand requests.
+- Classify requests into demand categories.
+- Apply personalized filtering based on a computed index.
 
+- Count valid and removed requests.
 
+## Inputs
 
+- Number of requests (m).
+- Demand values entered one by one.
+- A predefined name used to calculate the personalization index.
+
+## Logic
+
+- For each demand value:
+  - If the value is negative, it is treated as an invalid request.
+  - If the value is zero, it is counted as no demand.
+  - Requests are classified as:
+    - 1 to 20 → Low Demand
+    - 21 to 50 → Moderate Demand
+    - Greater than 50 → High Demand
+
+## Personalization Rule (PLI)
+
+- Count the number of characters in the name excluding spaces.
+- Compute:
+  - PLI = length mod 3
+- Apply filtering as follows:
+  - If PLI equals 0, remove all Low Demand requests.
+  - If PLI equals 1, remove all High Demand requests.
+  - If PLI equals 2, remove both Low and High Demand requests.
+
+## Counters
+
+- valid: counts all non-negative requests.
+- removed: counts requests removed due to filtering.
+- invalid requests are tracked separately.
+
+## Output
+
+- Length of the name.
+- Personalization index (PLI).
+- Total valid requests.
+- Number of removed requests.
+- Demand categories after filtering:
+  - Low Demand
+  - Moderate Demand
+  - High Demand
+
+<img width="1589" height="968" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/7e022808-92de-4b09-9bc6-b63e54d29807" />
 
