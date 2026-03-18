@@ -208,3 +208,87 @@ The program takes:
 
 <img width="1589" height="968" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/7e022808-92de-4b09-9bc6-b63e54d29807" />
 
+## Code2Xplore – 60 Days Challenge (Day-6)
+
+# Transaction Risk Analysis Program
+
+## Problem Overview
+- This program analyzes transaction amounts entered by the user.
+- It identifies risky spending patterns based on frequency and total amount.
+- Transactions are grouped into categories for better analysis.
+
+## Objective
+- Accept multiple transaction values
+- Classify transactions into categories
+- Detect spending patterns
+- Calculate total and frequency
+- Assign a final risk level
+- Provide a summary using a tuple
+
+## How the Program Works
+- The user enters the number of transactions and their values.
+- All values are stored in a list.
+- Using list comprehension, transactions are classified into:
+  - invalid (≤ 0)
+  - normal (1–500)
+  - large (501–2000)
+  - high risk (> 2000)
+- A separate list is created for valid transactions (greater than 0).
+- A loop is used to calculate total spending.
+- Conditions are used to detect:
+  - frequent transactions
+  - large spending
+  - suspicious patterns
+
+## Risk Classification Logic
+- The program uses three factors:
+  - number of valid transactions (freq)
+  - total transaction value (total)
+  - number of high-risk transactions
+
+### Decision Rules
+- High Risk
+  - freq > 4 AND total > 3000
+
+- Moderate Risk
+  - freq > 3 OR total > 2500 OR high-risk transactions ≥ 3
+
+- Low Risk
+  - when none of the above conditions are satisfied
+
+## Output
+- Categorized transactions:
+  - Invalid
+  - Normal
+  - Large
+  - High Risk
+- Pattern detection:
+  - Frequent Transactions
+  - Large Spending
+  - Suspicious Pattern
+- Total transaction value
+- Number of transactions
+- Final Risk Classification
+- Summary tuple:
+  - (total transactions, valid transactions, total amount, risk)
+
+## My Approach / Logic Decisions
+- I separated classification and analysis to keep the code simple.
+- I considered only positive values as valid transactions.
+- I used both frequency and total amount to determine risk level.
+- I used list comprehension for cleaner classification.
+
+## Reflection
+- This program helped me understand how multiple conditions affect decision making.
+- Combining frequency and amount gives better results than using a single factor.
+- The logic can be extended for real-world fraud detection systems.
+
+## Concepts Used
+- Lists
+- Loops (for)
+- Conditional statements (if-elif)
+- List comprehension
+- Dictionary
+- Tuple
+
+  <img width="1163" height="910" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/b0a33bc3-eff9-4412-8e93-a0c33943b963" />
