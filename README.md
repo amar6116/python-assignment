@@ -292,3 +292,115 @@ The program takes:
 - Tuple
 
   <img width="1163" height="910" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/b0a33bc3-eff9-4412-8e93-a0c33943b963" />
+
+
+
+  ## Code2Xplore – 60 Days Challenge (Day-8)
+
+# Multi-Dimensional Academic Intelligence System
+
+## Problem Overview
+- This program analyzes student performance.
+- It uses marks, attendance, and assignment scores.
+- It classifies students into categories.
+- It gives overall class performance.
+
+## Objective
+- Generate student data using random values
+- Store data using list, tuple, and dictionary
+- Convert data into DataFrame using Pandas
+- Use NumPy for calculations
+- Classify students into categories
+- Detect patterns in data
+- Provide final system result
+- Return summary using a tuple
+
+## How the Program Works
+- The program generates n students based on roll number.
+- Each student has:
+  - marks (0–100)
+  - attendance (0–100)
+  - assignment (0–50)
+- Data is stored in a list as tuples.
+- Data is converted into a DataFrame.
+- Classification is done using conditions.
+- Analysis is done using NumPy and manual calculation.
+
+## Student Classification Logic
+- At Risk
+  - marks < 40 OR attendance < 50
+- Average
+  - marks between 40 and 70
+- Good
+  - marks between 71 and 90
+- Top Performer
+  - marks > 90 AND attendance > 80
+
+## Analysis Performed
+- Mean (calculated manually)
+- Median (NumPy)
+- Standard Deviation (NumPy)
+- Correlation (Marks vs Attendance)
+- Normalization of marks
+
+## Pattern Detection
+- Consistency
+  - standard deviation < 15
+- Attendance Risk
+  - more than 3 students with attendance < 50
+- High Achievement
+  - at least 2 top performers
+
+## Performance Index Formula
+performance_index = (marks * 0.6 + assignment * 0.4) * log(attendance + 1)
+
+## Output
+- DataFrame (table format)
+- Student category dictionary
+- Unique categories (set)
+- Statistical values:
+  - mean
+  - median
+  - standard deviation
+  - correlation
+- Final system insight:
+  - Stable Academic System
+  - Moderate Performance
+  - Critical Attention Required
+- Summary tuple:
+  - (mean, std_dev, max_marks)
+
+## Personalization Applied
+- Last digit of Register Number = 6
+- Hence, n = 6 students generated
+
+## My Approach / Logic Decisions
+- I used three functions:
+  - generate_data()
+  - classify_students()
+  - analyze_data()
+- I used random values to simulate data.
+- I used conditions to classify students.
+- I calculated mean manually.
+
+## Concepts Used
+- Lists
+- Tuples
+- Dictionary
+- Set
+- Functions
+- List comprehension
+- NumPy
+- Pandas
+- Random module
+- Math module
+
+## Reflection
+- I learned how to use NumPy and Pandas.
+- I understood how to analyze data step by step.
+- I learned classification using conditions.
+- I learned manual calculation of mean.
+
+## Output Screenshot
+<img width="1444" height="890" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/9a0bfb50-0322-4017-962a-fa323a7d3523" />
+
